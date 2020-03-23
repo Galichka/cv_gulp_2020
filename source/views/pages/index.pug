@@ -1,0 +1,34 @@
+extends ../layouts/simple.layout.pug
+block variables
+	-
+		var pageTitle = "homepage"
+mixin section(params)
+	.section
+		.section--title #{params.title}
+block content
+	.cv-header
+		.cv-photo
+			img(src="img/resume.jpg" alt="photo of developer")
+		.cv-title
+			.cv-name Yaryna
+			.cv-second-name Galych
+			.cv-title-position Student
+	.wrapper
+		.cv-contacts 
+			.title Contacts
+			br
+			|+359948594859 
+			br
+			|Ukraine
+			br
+			|street Galytska 20/70
+		.cv-profile
+			.title Profile
+			br
+			|Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		.cv-education
+			.title Education
+			ul
+				li Ukrainian Grammar School 1, Ivano-Frankivsk
+				li Vasyl Stefanyk Precarpathian National University	
+		+section({title: "skills"})
