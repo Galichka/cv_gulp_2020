@@ -1,5 +1,7 @@
 @import 'vars', 'reset' 		
 
+body
+	background: #FFFEBB
 img
 	max-width: 100%
 	font-size: 0
@@ -9,7 +11,7 @@ img
 .cv-photo
 	flex-basis: 300px
 .cv-title
-	background: linear-gradient(90deg, rgba(195,42,34,1) 0%, rgba(253,247,45,1) 100%)
+	background: radial-gradient(circle, rgba(246,120,35,1) 0%, rgba(252,226,70,1) 100%)
 	flex: 1 1 auto
 	padding: 15px
 	text-align: center
@@ -31,4 +33,12 @@ img
 	margin-bottom: 15px
 	margin-top: 15px
 	color: #fff
-	text-transform: uppercase				
+	text-transform: uppercase
+p
+	padding-bottom: 5px
+a 
+	&:hover
+		color: orange	
+.italic
+	font-style: italic
+	color: grey							
